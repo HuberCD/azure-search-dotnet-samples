@@ -19,7 +19,7 @@ namespace FunctionApp_web_search
         private static string searchApiKey = Environment.GetEnvironmentVariable("SearchApiKey", EnvironmentVariableTarget.Process);
         private static string searchServiceName = Environment.GetEnvironmentVariable("SearchServiceName", EnvironmentVariableTarget.Process);
         private static string searchIndexName = Environment.GetEnvironmentVariable("SearchIndexName", EnvironmentVariableTarget.Process) ?? "good-books";
-
+        private static zzz = string.Empty;
 
         [FunctionName("lookup")]
         public static async Task<IActionResult> Run(
